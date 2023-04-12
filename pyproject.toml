@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cpf_br"
+version = "0.0.1"
+authors = [
+  { name="Gabriel P. Lopes", email="gabriel.lopes1680@gmail.com" },
+]
+description = "Uma lib simples de validação e e shorthands para lidar com cpf brasileiro"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gabriel1680/cpf_br"
+"Bug Tracker" = "https://github.com/gabriel1680cpf_br/issues"
