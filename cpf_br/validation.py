@@ -4,7 +4,7 @@ import re
 def is_cpf_valid(cpf: str) -> bool:
     if not is_format_valid(cpf):
         return False
-    cpf = stripe_chars(cpf)
+    cpf = strip_chars(cpf)
     if not are_verification_digits_valid(cpf):
         return False
     return not is_same_digits(cpf)
@@ -22,7 +22,7 @@ def are_verification_digits_valid(cpf: str) -> bool:
     return cpf_verification_digits == str(first_digit) + str(second_digit)
 
 
-def stripe_chars(cpf: str) -> str():
+def strip_chars(cpf: str) -> str():
     return re.sub("\\D", "", cpf)
 
 
