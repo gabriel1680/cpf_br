@@ -16,3 +16,8 @@ def test_should_not_create_a_invalid_cpf():
 def test_should_format_cpf():
     cpf = CPF("12345678909")
     assert cpf.with_format() == "123.456.789-09"
+
+
+def test_should_get_value():
+    cpf = CPF("12345678909")
+    assert cpf.value() == "12345678909"

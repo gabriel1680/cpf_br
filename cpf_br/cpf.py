@@ -6,7 +6,7 @@ class CPF:
     def __init__(self, cpf: str) -> None:
         if not CPF.validate(cpf):
             raise Exception("Invalid CPF")
-        self.value = strip_chars(cpf)
+        self.__value = strip_chars(cpf)
 
     @staticmethod
     def validate(cpf: str) -> bool:
@@ -14,4 +14,7 @@ class CPF:
 
     def with_format(self) -> str:
         format = "{}{}{}.{}{}{}.{}{}{}-{}{}"
-        return format.format(*list(self.value))
+        return format.format(*list(self.__value))
+
+    def value(self) -> str:
+        return self.__value
