@@ -68,4 +68,6 @@ def test_none_equality():
 
 
 def test_string_casting():
-    assert str(CPF("12345678909")) is "12345678909"
+    cpf = CPF("12345678909")
+    assert f"cpf: {cpf}" == "cpf: 12345678909"
+    assert str(cpf) is "12345678909"
