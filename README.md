@@ -1,10 +1,10 @@
 # Description
 
 ## PT-BR
-cpf_br é uma abstração escrita em python para ajudar com as tarefas do dia a dia dos desenvolvedores que precisem lidar com a validação, criação, teste e formatação de cpfs brasileiros.
+cpfbr é uma abstração escrita em python para ajudar com as tarefas do dia a dia dos desenvolvedores que precisem lidar com a validação, criação, teste e formatação de cpfs brasileiros.
 
 ## US-EN
-cpf_br is a abstraction written in python to help with developer every day tasks, that need to deal with validation, creation, testing and formatting of brasilian cpfs.
+cpfbr is a abstraction written in python to help with developer every day tasks, that need to deal with validation, creation, testing and formatting of brasilian cpfs.
 
 # Usage
 
@@ -27,7 +27,7 @@ def handle_request(request) -> None:
 
 ```python
 # customer.py
-from cpf_br import CPF
+from cpfbr import CPF
 from datetime import datetime
 
 class Customer:
@@ -40,7 +40,7 @@ class Customer:
         return self.__name
 
     def cpf(self) -> CPF:
-        return self.__CPF
+        return self.__cpf
 
     def birth_date(self) -> datetime:
         return self.__birth_date
@@ -59,13 +59,13 @@ use only functions to validate cpfs
 ```python
 # create_customer_controller.py
 
-from cpf_br import is_cpf_valid
+from cpfbr import is_cpf_valid
 
 def handle_request(request) -> None:
     if not request.name or not request.cpf or not request.birth_date:
         return bad_request("Invalid parameters")
 
-    if not is is_cpf_valid(request.cpf):
+    if not is_cpf_valid(request.cpf):
         return unprocessable_entity("Invalid CPF")
 
     Customer(request.name, request.cpf, request.birth_date)

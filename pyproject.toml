@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "cpf_br"
+name = "cpfbr"
 version = "0.0.1"
 authors = [
   { name="Gabriel P. Lopes", email="gabriel.lopes1680@gmail.com" },
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/gabriel1680/cpf_br"
-"Bug Tracker" = "https://github.com/gabriel1680cpf_br/issues"
+"Homepage" = "https://github.com/gabriel1680/cpfbr"
+"Bug Tracker" = "https://github.com/gabriel1680cpfbr/issues"
