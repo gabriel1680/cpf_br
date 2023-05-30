@@ -1,6 +1,6 @@
 import pytest
 
-from cpf_br.cpf import *
+from cpfbr.cpf import *
 
 
 def test_should_create_a_cpf():

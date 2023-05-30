@@ -1,4 +1,4 @@
-from cpf_br.validation import *
+from cpfbr.validation import *
 
 
 class CPF:

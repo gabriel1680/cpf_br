@@ -1,4 +1,4 @@
-from cpf_br.validation import is_cpf_valid
+from cpfbr.validation import is_cpf_valid
 
 
 def test_cpf_validation_with_format():

@@ -1,4 +1,4 @@
-from cpf_br.validation import are_verification_digits_valid
+from cpfbr.validation import are_verification_digits_valid
 
 
 def test_verification_digits_validation():

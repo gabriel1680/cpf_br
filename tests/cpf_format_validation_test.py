@@ -1,6 +1,6 @@
 import pytest
 
-from cpf_br.validation import is_format_valid
+from cpfbr.validation import is_format_valid
 
 
 @pytest.fixture
