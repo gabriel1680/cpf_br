@@ -23,6 +23,7 @@ def are_verification_digits_valid(cpf: str) -> bool:
 
 
 def strip_chars(cpf: str) -> str():
+    """ Remove all char that is not a digit"""
     return re.sub("\\D", "", cpf)
 
 
