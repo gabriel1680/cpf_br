@@ -80,3 +80,24 @@ def bad_request(msg: str):
     return { 'status': 'Bad Request', 'message': msg, 'code': 400 }
     
 ```
+## Cli
+
+You can use it from cli too!
+
+command:
+
+```sh
+    python3 cpfbr 12345678909 -v -f
+```
+output:
+
+```sh
+    invalid, Invalid CPF number. Could not format
+```
+
+Command options:
+
+flag | function
+--- | ---
+-v | Will execute the validate function and print it out on stdout
+-f | Will execute the formatting function and print it out on stdout if the cpf is valid otherwise it will print a warning
